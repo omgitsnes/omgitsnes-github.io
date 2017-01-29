@@ -1,1 +1,1 @@
-omgitsnes@github.io
+omgitsnes.github.io
