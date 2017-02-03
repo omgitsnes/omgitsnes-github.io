@@ -32,30 +32,6 @@
 </head>
 
 <body>
-
-    <!-- Navigation
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Content</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
--->
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -63,7 +39,9 @@
             <h1>OMGITSNES</h1>
             <h3></h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg"><i class="fa fa-arrow-down"></i></a>
+            <a href="#about" class="btn btn-dark btn-lg"><i class="fa fa-arrow-down"></i>About</a>
+            <a href="#portfolio" class="btn btn-dark btn-lg"><i class="fa fa-arrow-down"></i>Portfolio</a>
+            <a href="#contact" class="btn btn-dark btn-lg"><i class="fa fa-arrow-down"></i>Contact</a>
         </div>
     </header>
 
@@ -85,7 +63,7 @@
 
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
+    <section id="portfolio" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -172,39 +150,43 @@
     -->
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Fernando Silva</strong>
-                    </h4>
-                    <p>Leiria, Portugal</p>
-                    <ul class="list-unstyled">
-                        <!--<li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>-->
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:ferjms@gmail.com">ferjms@gmail.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; omgitsnes 2017</p>
+    <section id="contact">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1 text-center">
+                        <h4><strong>Fernando Silva</strong>
+                        </h4>
+                        <p>Leiria, Portugal</p>
+                        <ul class="list-unstyled">
+                            <!--<li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>-->
+                            <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:ferjms@gmail.com">ferjms@gmail.com</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/fernandosilvaaa"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/omgitsnes"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/omgitsnes"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                            </li>
+                            <!--
+                            <li>
+                                <a href="#"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                            </li>
+                            -->
+                        </ul>
+                        <hr class="small">
+                        <p class="text-muted">Copyright &copy; omgitsnes 2017</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -214,17 +196,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
 
     // Scrolls to the selected menu item on the page
     $(function() {
