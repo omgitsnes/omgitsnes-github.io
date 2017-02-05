@@ -159,9 +159,20 @@ footer {
 
 .img-avatar {
     width: 200px;
-
 }
 
 .bg-portfolio {
     background-color: rgb(81,57,53);
+}
+
+.icon-color {
+    color: rgb(81,57,53);
+}
+
+a {
+    color: rgb(81,57,53);
+}
+
+a:hover {
+    color: rgb(101,77,73);
 }
