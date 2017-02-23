@@ -26,6 +26,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 7em;
+    font-size-adjust: auto;
     font-weight: 800;
     font-family: 'VT323';
     color: white;
