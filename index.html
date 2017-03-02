@@ -40,9 +40,9 @@
 <body>
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center animated fadeInDown">
+        <div id="top-animation" class="text-vertical-center">
             <i class="fa fa-4x fa-graduation-cap"></i>
-            <h1 class="">OMGITSNES</h1>
+            <h1 class="">Fernando Silva</h1>
             <br>
             <a href="#about" class="btn btn-dark btn-lg"><i class="fa fa-arrow-down"></i>About</a>
             <a href="#portfolio" class="btn btn-dark btn-lg"><i class="fa fa-arrow-down"></i>Portfolio</a>
@@ -57,7 +57,7 @@
             <div class="row">
                 <div class="col-lg-12 col-xs-12 text-center">
 
-                    <h2><p>Hello! My name is Fernando Silva and I've been dealing with computers since I can remember. Mostly because of videogames but at some point I realized how much we can do with It.</p>
+                    <h2><p>Hello! My name is Fernando and I've been dealing with computers since I can remember. Mostly because of videogames but at some point I realized how much we can do with It.</p>
                       <img src="./img/pic1.jpg" class="img-circle img-responsive img-avatar img-portfolio">
                     <p>I fell in love with Developing.</p><p>From standalone apps to websites, to data acquisition and management using Arduino.</p></h2>
                     <p class="lead">This is my small space, welcome! </p>
@@ -242,6 +242,13 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script>
+        $(document).ready(function() {
+            $("#top-animation").last().addClass("animated fadeInDown");
+        });
+    </script>
 
     <!-- Custom Theme JavaScript -->
     <script>
