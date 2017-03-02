@@ -18,10 +18,7 @@
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Animate.css -->
-
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -78,7 +75,7 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="portfolio-item">
-                                <img src="./img/balaoGest.jpg" class="img-portfolio img-rounded img-responsive">
+                                <a id="single_image" href="./img/balaoGest.jpg"><img src="./img/balaoGest.jpg" class="img-portfolio img-rounded img-responsive"></a>
                                 </span>
                                 <h4>
                                     <strong>"Balao Gest"</strong>
@@ -247,6 +244,8 @@
     <script>
         $(document).ready(function() {
             $("#top-animation").last().addClass("animated fadeInDown");
+
+
         });
     </script>
 
